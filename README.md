@@ -10,7 +10,7 @@ Feel free to explore the code and content of the website. If you find anything i
 
 ## Website URL
 
-The website is live and can be accessed at [https://shivam-kr-sharma.github.io](https://shivam-kr-sharma.github.io). You can also find the latest version of the code in this GitHub repository.
+The website is live and can be accessed at [https://shivam-kr-sharma.github.io](https://shivam-kr-sharma.github.io/shivam). You can also find the latest version of the code in this GitHub repository.
 
 ## Technologies Used
 
