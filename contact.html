@@ -1,162 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Shivam Kumar</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8f8f8;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            text-align: center;
-        }
-
-        h2 {
-            color: #3498db;
-        }
-
-        .contact-info {
-            margin-bottom: 40px;
-        }
-
-        .contact-info p {
-            line-height: 1.6;
-            color: #333;
-        }
-
-        .contact-links {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 100px; /* Space between map address and icons */
-            margin-bottom: 300px;
-        }
-
-        .contact-links a {
-            margin: 0 20px;
-            font-size: 24px;
-            color: #3498db;
-        }
-
-        .contact-links a:hover {
-            color: #1e87d3;
-        }
-
-        .address-container {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            margin-bottom: 40px;
-            padding: 15px;
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            border-radius: 5px;
-        }
-
-        .address {
-            flex: 1;
-            margin-right: 20px;
-        }
-
-        .map {
-            flex: 1;
-            height: 250px;
-            border: none;
-            border-radius: 5px;
-            width: 100%; /* Adjust width as needed */
-        }
-
-        @media (max-width: 768px) {
-            .address-container {
-                flex-direction: column;
-            }
-
-            .map {
-                width: 100%;
-                margin-top: 20px;
-            }
-        }
-
-        .address {
-            margin: 20px 0;
-            padding: 15px;
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-            border-radius: 5px;
-            text-align: left;
-        }
-
-        .address h3 {
-            color: #3498db;
-            margin-top: 0;
-        }
-
-        .map {
-            width: 100%;
-            height: 250px;
-            border: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-    </style>
+    <title>Contact Me - Shivam Kumar</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+
 <body>
+    <header>
+        <nav id="index-nav">
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="Research.html">Research</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="about.html">About Me</a>
+            <a href="contact.html">Contact Me</a>
+        </nav>
+        <div class="contact-section">
+            <div class="contact-content">
+                <h1>Contact Me</h1>
+                <p>If you have any questions or would like to discuss my research or projects, feel free to reach out!</p>
+                <form action="process-form.php" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
 
-<div class="container">
-    <h2>Contact Me</h2>
+                <!-- Address Section -->
+                <h2>Address</h2>
 
-    <!-- College Address -->
-    <div class="address">
-        <h3>College Address</h3>
-        <p>Hostel 6</p>
-        <p>IISER Mohali</p>
-        <p>Sector 81</p>
-        <p>PIN-140306</p>
-        <p>SAS Nagar, Punjab</p>
-        <p>India</p>
-        <iframe class="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.455646578629!2d76.71787231551137!3d30.70464968164832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed4c3d5c8f2f%3A0x64f487f38e5d6e10!2sIndian%20Institute%20of%20Science%20Education%20and%20Research%20Mohali!5e0!3m2!1sen!2sin!4v1653658685254!5m2!1sen!2sin"
-            allowfullscreen=""
-            loading="lazy">
-        </iframe>
-    </div>
+                <!-- Address Row: Flex Container -->
+                 
+                <div class="address-row">
 
-    <!-- Home Address -->
-    <div class="address">
-        <h3>Home Address</h3>
-        <p>Saraswati Bhawan</p>
-        <p>Near State Tubewell, Barh</p>
-        <p>PIN-803213</p>
-        <p>Patna, Bihar</p>
-        <p>India</p>
-        <iframe class="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115855.54757430322!2d85.26785340094993!3d25.477585339418665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f29937a32b7b1b%3A0x9c5488e8c4169a1f!2sBarh%2C%20Bihar!5e0!3m2!1sen!2sin!4v1653658787389!5m2!1sen!2sin"
-            allowfullscreen=""
-            loading="lazy">
-        </iframe>
-    </div>
+                    <!-- College Address Box -->
+                    <div class="address-box">
+                        <div class="address-text">
+                            <h3>College Address</h3>
+                            <p>Hostel 6</p>
+                            <p>IISER Mohali</p>
+                            <p>Sector 81</p>
+                            <p>PIN-140306</p>
+                            <p>SAS Nagar, Punjab</p>
+                            <p>India</p>
+                        </div>
+                        <div class="address-map">
+                            <iframe class="map"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.455646578629!2d76.71787231551137!3d30.70464968164832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed4c3d5c8f2f%3A0x64f487f38e5d6e10!2sIndian%20Institute%20of%20Science%20Education%20and%20Research%20Mohali!5e0!3m2!1sen!2sin!4v1653658685254!5m2!1sen!2sin"
+                                allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
 
-    <div class="contact-links">
-        <a href="tel:+123456789"><i class="fas fa-phone"></i></a>
-        <a href="mailto:kshivam36097@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/shivam-kr-sharmaa/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/shivam__kumaar_/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://github.com/shivam-kr-sharma" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://shivam-kr-sharma.github.io/shivam/" target="_blank"><i class="fas fa-globe"></i></a>
-        <a href="https://twitter.com/ShivamKuma55888" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <!-- Home Address Box -->
+                    <div class="address-box">
+                        <div class="address-text">
+                            <h3>Home Address</h3>
+                            <p>Saraswati Bhawan</p>
+                            <p>Near State Tubewell</p>
+                            <p>PIN-803213, Barh</p>
+                            <p>Patna, Bihar</p>
+                            <p>India</p>
+                        </div>
+                        <div class="address-map">
+                            <iframe class="map"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115855.54757430322!2d85.26785340094993!3d25.477585339418665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f29937a32b7b1b%3A0x9c5488e8c4169a1f!2sBarh%2C%20Bihar!5e0!3m2!1sen!2sin!4v1653658787389!5m2!1sen!2sin"
+                                allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>  
+                <!-- Contact Links Section -->
+                <div class="contact-links">
+                    <a href="tel:+123456789"><i class="fas fa-phone"></i></a>
+                    <a href="mailto:kshivam36097@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/shivam-kr-sharmaa/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/shivam__kumaar_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/shivam-kr-sharma" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://shivam-kr-sharma.github.io/shivam/" target="_blank"><i class="fas fa-globe"></i></a>
+                    <a href="https://twitter.com/ShivamKuma55888" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div> 
+            </div>
+        </div>
+    </header>
 
-    </div>
-</div>
+    <footer>
+        <p>© 2025 Shivam Kumar. All rights reserved.</p>
+    </footer>
 
+    <script>
+        // Optional JavaScript for additional functionality or form validation
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.querySelector('.contact-form');
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                alert('Thank you for reaching out! I will get back to you as soon as possible.');
+                form.reset(); // Clear form after submission
+            });
+        });
+    </script>
 </body>
+
 </html>
