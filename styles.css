@@ -66,7 +66,7 @@ header .intro-actions button:hover {
 /* Navigation Bar */
 nav {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 30px;  
 }
 
 nav a {
@@ -81,6 +81,30 @@ nav a {
 nav a:hover {
     color: #1e87d3;
 }
+/* Navigation Bar with id */
+#index-nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 30px; /* Spacing specific to index.html */
+}
+
+#index-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+#index-nav a:hover {
+    color: #1e87d3;
+}
+
+
+
+
 
 /* Footer */
 footer {
@@ -196,5 +220,342 @@ footer {
     .slider-image {
         max-width: 80%; /* Make images larger on small screens */
         margin-bottom: 15px;
+    }
+}
+
+/* Education Section */
+.education-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education-section h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.education-card {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.education-card h2 {
+    font-size: 1.5rem;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.education-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+/* Research Section */
+.research-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.research-section h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.research-topic {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.research-topic h2 {
+    font-size: 1.5rem;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.research-topic p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+/* Projects Section */
+.projects-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects-section h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.project-category {
+    margin-bottom: 40px;
+}
+
+.project-category h2 {
+    font-size: 1.8rem;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.project {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+/* Contacts Section */
+.contact-info {
+    margin-bottom: 40px;
+}
+
+.contact-info p {
+    line-height: 1.6;
+    color: #333;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px; /* Space between map address and icons */
+    margin-bottom: 300px;
+}
+
+.contact-links a {
+    margin: 0 20px;
+    font-size: 24px;
+    color: #3498db;
+}
+
+.contact-links a:hover {
+    color: #1e87d3;
+}
+
+/* Styling the Form Section */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto; /* Centers the form horizontally */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Group Styling (for input fields and textareas) */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label Styling */
+.form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Input and Textarea Styling */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box; /* Includes padding and border in the element's total width */
+}
+/* Preventing resizing of textarea */
+/* .form-group textarea {
+    resize: none; 
+} */
+
+/* Input and Textarea Focus Styling */
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button Styling */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Button Hover Effect */
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .contact-form {
+        padding: 15px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+
+/* Address Section */
+.address-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.address-box {
+    display: flex;
+    margin-bottom: 40px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.address-text {
+    color: #000;
+    flex: 1; /* Takes 50% of the width */
+    padding: 20px;
+    background-color: #f9f9f9;
+    
+}
+
+.address-map {
+    flex: 1; /* Takes 50% of the width */
+    height: 100%;
+}
+
+.address-map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+/* Contact links section */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact-links a {
+    font-size: 30px;
+    text-decoration: none;
+    color: inherit;  /* Ensures the icons inherit their original color */
+    margin: 0 15px;  /* Adds space between the icons */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+.contact-links a .fa-phone {
+    color: #25D366; /* Green color for WhatsApp */
+}
+.contact-links a .fa-envelope {
+    color: #ff2713; /* Red color for Email */
+}
+.contact-links a .fab.fa-linkedin {
+    color: #0077b5; /* LinkedIn color */
+}
+.contact-links a .fab.fa-instagram {
+    color: #C13584; /* Instagram color */
+}
+.contact-links a .fab.fa-github {
+    color: #333; /* GitHub color */
+}
+.contact-links a .fa-globe {
+    color: #3b61ca; /* Globe icon color */
+}
+.contact-links a .fab.fa-twitter {
+    color: #1DA1F2; /* Twitter color */
+}
+/* Icon color for default state (ensure natural colors) */
+.contact-links a i {
+    color: initial; /* Resets to default icon color */
+}
+
+/* Hover effect to change icon color on hover */
+.contact-links a:hover i {
+    color: #007bff; /* You can customize the hover color, e.g., blue */
+}
+
+/* Optional: Icon size adjustment for smaller screens */
+@media (max-width: 768px) {
+    .contact-links a {
+        font-size: 20px; /* Reduces icon size on smaller screens */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .address-container {
+        flex-direction: column; /* Stacks the address boxes on small screens */
+    }
+
+    .address {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .map {
+        height: 200px; /* Adjusts the map height on smaller screens */
     }
 }
