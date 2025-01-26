@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Shivam Kumar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="about.html">About Me</a>
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="education-section">
+            <h1 class="section-title">My Education Journey</h1>
+
+            <div class="education-item">
+                <h2>BS-MS Dual Degree</h2>
+                <h3 style="font-style: italic; color: #07396e;">Physics Major with minor in Data Science</h3>
+                <p><strong>Indian Institute of Science Education and Research (IISER) Mohali</strong> - Punjab, India
+                </p>
+                <p><strong>Timeline:</strong> December 2020 - May 2025</p>
+                <p><strong>Research Interests:</strong>  Quantum Optics, Atomic Molecular and Optical Physics, Condensed Matter Physics (experimental) </p>
+                <p>Indian Institute of Science Education and Research (IISER) Mohali is one of the Seven IISERs all across India. IISERs are autonomous institutions in India that teach and conduct research in natural sciences. The Government of India established the IISERs through the Ministry of Education.
+                I got admission to the Dual Degree program by clearing the JEE Advanced 2020.
+                Further information about this institution can be found on this <a href="https://www.iisermohali.ac.in" target="_blank">link</a>
+                </p>
+
+                <div class="toggle-content">
+                    <div class="row">
+                        <div class="column">
+                            <h3 class="toggle-title" onclick="toggleContent('relevant-courses')">Relevant Courses</h3>
+                            <ul id="relevant-courses" class="toggle-content-list">
+                                <h4 class="toggle-title" onclick="toggleContent('master-courses')">Major Mandatory</h4>
+                                <ul id="master-courses" class="toggle-content-list">
+                                    <li>
+                                        <h4 onclick="toggleContent('classical-mech')">Classical Mechanics</h4>
+                                        <ul id="classical-mech" class="toggle-content-details-list">
+                                            <li>Lagrangian formulation of mechanics. Degrees of freedom and equations of
+                                                motion. Constraints and Generalized coordinates. Principle of least
+                                                action. Emphasis on the Variational principle. The Calculus of
+                                                Variations. Euler-Lagrange equations. Constrained systems and Lagrange
+                                                multipliers.</li>
+                                            <li>Phase space formulation. Hamiltonian, phase space, Poisson brackets.
+                                                Canonical transformations. Liouville's theorem and Poincare recurrence.
+                                                Hamilton-Jacobi theory. Action-angle variables.</li>
+                                            <li>Oscillators. Small fluctuations. Damped,forced and anharmonic.
+                                                Eigenvalue equation and principle axis transformation, normal
+                                                coordinates, forced oscillations and resonance, vibrations of molecules.
+                                                Nonlinear oscillations and chaos.</li>
+                                            <li>Motion in a central field. Equivalent one-body problem. first integrals,
+                                                classification of orbits, virial theorem, Bertrand's theorem Kepler's
+                                                law. Symmetries and conservations laws. Noether's theorem. Central
+                                                forces in three dimensions. Scattering in a central force field,
+                                                Rutherford scattering.</li>
+                                            <li>Rigid bodies. Rotation. Orthogonal transformations, Euler angles, rigid
+                                                body dynamics, spinning top.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h4 onclick="toggleContent('quant-mech')">Quantum Mechanics</h4>
+                                        <ul id="quant-mech" class="toggle-content-details-list">
+                                            <li>Classical vs. quantum Mechanics, Simple 2-state QM system. Hilbert
+                                                Spaces, Operators. Observables - Compatible Observables, Tensor Product
+                                                Spaces, Uncertainty Relations. Position, Momentum and Translation.
+                                                Eigenvalue Problems. Emphasis on Linear Vector Spaces from a
+                                                mathematical point of view.</li>
+                                            <li>Time Evolution (Quantum Dynamics). Schroedinger, Heisenberg and
+                                                Interaction Pictures; Energy-time Uncertainty, Interpretation of
+                                                Wavefunction. Quantum Particles in Potential. Harmonic oscillator.</li>
+                                            <li>Angular Momentum. Rotation in Quantum mechanics. ${\mathrm SO}(3)$ vs.
+                                                ${\mathrm SU}(2)$. Spherical Harmonics. Addition of Angular Momenta.
+                                            </li>
+                                            <li>Single electron atoms: Spherically symmetric potentials, spherical
+                                                harmonics, Hydrogen atom problem, solution of Schroedinger equation,
+                                                energy levels and eigenfunctions, orbital angular momentum, Hydrogenic
+                                                atoms.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h4 onclick="toggleContent('electro')">Electrodynamics</h4>
+                                        <ul id="electro" class="toggle-content-details-list">
+                                            <li>Electrostatics. Boundary value problems. Method of images. Green's
+                                                functions. Eigenfunction expansions. Series solution of PDE. Laplace
+                                                equation in spherical and cylindrical coordinates. Special functions.
+                                                Legendre polynomials, Associated Legendre functions and Spherical
+                                                harmonics, Bessel functions. Multipole expansion. Electric fields in
+                                                dielectrics. Boundary value problems in dielectrics.</li>
+                                            <li>Magnetostatics. Biot and Savart Law. Ampere's law vector potential.
+                                                Magnetic field in matter. Boundary conditions. B and H fields.
+                                                Magnetization. Faraday's law. Energy in the magnetic field.</li>
+                                            <li>Electrodynamics. Maxwell equations. Displacement current. Scalar and
+                                                vector potentials. Gauge transformations. Electromagnetic waves.
+                                                Pointing vector. Electromagnetic waves in media.</li>
+                                            <li>Relativistic formulation of electromagnetism. $F^{\mu,\nu}$ and its
+                                                transformation properties.</li>
+                                            <li>Dipole radiation. Fields or moving charges. Retarded potentials.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h4 onclick="toggleContent('stat-mech')">Statistical Mechanics</h4>
+                                        <ul id="stat-mech" class="toggle-content-details-list">
+                                            <li>Review of thermodynamics: Laws, processes, thermodynamic stability.</li>
+                                            <li>Review of probability: one random variable, probability distributions,
+                                                random walks, many random variables, central limit theorem, information,
+                                                entropy and estimation.</li>
+                                            <li>Kinetic Theory of gases: Liouville's theorem, Boltzmann transport
+                                                equation.</li>
+                                            <li>Classical statistical mechanics: Microcanonical, canonical, and grand
+                                                canonical ensembles.</li>
+                                            <li>Quantum statistical mechanics: Identical particles, Quantum microstates
+                                                and macrostates, Bose-Einstein and Fermi-Dirac statistics, quantum ideal
+                                                gases, example systems.</li>
+                                            <li>Phase transitions: Cumulant expansion, van der Waals equation,
+                                                variational methods, corresponding states, phase transitions, critical
+                                                point behaviour.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h4 onclick="toggleContent('advanced-quantum')">Advanced Quantum Mechanics</h4>
+                                        <ul id="advanced-quantum" class="toggle-content-details-list">
+                                            <li>Time independent and time dependent perturbation theory. Transitions
+                                                under the action of a perturbation acting for a finite time, Transitions
+                                                under the action of a periodic perturbation.</li>
+                                            <li>Review of Hydrogen atom, Fine structure, Hyperfine structure as an
+                                                application of perturbation theory to real systems. Zeeman effect, Stark
+                                                effect.</li>
+                                            <li>The semi-classical approach, WKB approaximation. Penetration through a
+                                                potential barrier.</li>
+                                            <li>The variational principle, applications.</li>
+                                            <li>Scattering theory: Scattering cross-section, partial waves, Yukawa and
+                                                Coulomb potentials, scattering by square well potential, reaction rates,
+                                                mean free path, retarded potentials, Born approximation.</li>
+                                            <li>Relativistic quantum mechanics: Klein-Gordon equation, negative
+                                                probabilities. Dirac equation, relativistic free particle solutions,
+                                                negative energy solutions, anti-particles. Zitterbewegung.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h4 onclick="toggleContent('atomic-molecular')">Atomic and Molecular Physics
+                                        </h4>
+                                        <ul id="atomic-molecular" class="toggle-content-details-list">
+                                            <li>Multielectron atoms: Schroedinger equation for He atom, spin
+                                                wavefunction and Pauli's exclusion principle, ground state and first
+                                                excited state, complete level schemes of He, Other multielectron atoms.
+                                                Thomas-Fermi approach and Hartree-Fock approximation for studying
+                                                multi-electron atoms.</li>
+                                            <li>Molecules: Hydrogen molecular ion, Hydrogen molecule, Born-Oppenheimer
+                                                approximation, Frank-Condon transition, molecular potential energy
+                                                curves, Molecular orbitals, Morse potential formalism.</li>
+                                            <li>Spectroscopy of atoms and molecules: Fine and Hyperfine structure of
+                                                atoms, electronic, vibrational and rotational spectroscopy of molecules,
+                                                selection rules, some experimental techniques of spectroscopy.</li>
+                                            <li>Atom Radiation interactions: Semi-classical description of radiation.
+                                                Absorption, spontaneous and stimulated emissions, Einstein's A and B
+                                                coefficients, Coherent and Incoherent emissions, LASERs and MASERs, Line
+                                                widths, various types of line broadening, two-level atoms in a radiation
+                                                field.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h4 onclick="toggleContent('solid-state')">Solid State Physics</h4>
+                                        <ul id="solid-state" class="toggle-content-details-list">
+                                            <li>Periodic Structure and Symmetry of Crystals. Fundamental types of
+                                                lattices. Simple crystal structures. Diffraction, Bragg's Law,
+                                                Reciprocal Lattice.</li>
+                                            <li>Chemical Bonding (Ionic, covalent, hydrogen, metallic). Lattice
+                                                Dynamics, Phonons. Brioullin zones. Group and phase velocity. Thermal
+                                                Properties. Normal modes, density of states, Debye theory, Einstein
+                                                model.</li>
+                                            <li>Free Electron Gas in 1D, 2D, 3D. Heat capacity. Electrical conductivity.
+                                                Hall effect. Thermal conductivity. Nearly Free Electron Approximation.
+                                                Bloch Theorem and Band Structure. Kronig-Penney model. Tight Binding
+                                                Method. Fermi Surface.</li>
+                                            <li>Semiconductors: Band Gap, Electrons, Holes, Impurities. Band theory for
+                                                semiconductors.</li>
+                                            <li>Magnetic properties of materials. Concepts of Dia-, Para-, Ferro- and
+                                                Antiferro- Magnetism. Introduction to Superconductivity & Superfluidity.
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h4 onclick="toggleContent('nuclear-particle')">Nuclear and Particle Physics
+                                        </h4>
+                                        <ul id="nuclear-particle" class="toggle-content-details-list">
+                                            <li>Basic Ideas: History. Particle exchange, range of forces, units: length,
+                                                mass and energy, review of special relativity, particle decay.</li>
+                                            <li>Structure of Nuclei: The shell model: basic ideas. Spins, parities and
+                                                magnetic moments in the shell model; excited states in the shell model.
+                                                Fermi gas model. Collective model. $\beta$-Decay. Fermi theory.</li>
+                                            <li>Nuclear Phenomenology: Notation; mass, spin and binding energies.
+                                                Nuclear forces; shapes and sizes; Liquid drop model: semi-empirical mass
+                                                formula. Nuclear stability. $\alpha$-, $\beta$-, $\gamma$- decay.</li>
+                                            <li>Fission and Fusion: Induced fission – fissile materials. Fission chain
+                                                reactions. Power from nuclear fission: nuclear reactors. Nuclear fusion:
+                                                Coulomb barrier. Stellar fusion. Fusion reactors.</li>
+                                            <li>Experimental Methods: Overview, accelerators, beams, particle
+                                                interactions with matter. Particle detectors (measurement of position,
+                                                momentum, particle identification, energy measurements).</li>
+                                            <li>Review of Dirac equation, covariant form of Dirac equation, relativity
+                                                and anti-particles, bilinear covariants, zero mass Fermions.</li>
+                                            <li>Elementary particles: Lepton multiplets. Lepton numbers. Neutrinos.
+                                                Neutrino mixing and oscillations; numbers of neutrinos. Evidence for
+                                                quarks; properties of quarks; hadrons. Flavour independence and hadron
+                                                multiplets.</li>
+                                        </ul>
+                                    </li>
+
+
+
+                                    <li>
+                                        <h4 onclick="toggleContent('maths-method')">Mathematical Methods for Physicists
+                                            (I)</h4>
+                                        <ul id="maths-method" class="toggle-content-details-list">
+                                            <li>Complex algebra: Functions of complex variables, Cauchy-Riemann
+                                                conditions, Cauchy’s integral theorem, Laurent expansion, singularities,
+                                                mapping, conformal mapping. Calculus of residues, Dispersion relations,
+                                                method of steepest descent.</li>
+                                            <li>Gamma and Beta functions: Gamma function, definition and properties,
+                                                Stirling’s series, Beta function, Incomplete Gamma function.</li>
+                                            <li>Differential equations: Partial differential equations, First order
+                                                differential equations, separation of variables, singular points, series
+                                                solutions with Frobenius’ method, a second solution, nonhomogenneous
+                                                equations, Green’s function, Heat flow and diffusion equations.</li>
+                                            <li>Sturm-Liouville theory: Self adjoint ordinary differential equations,
+                                                Hermitian operators, Gram-Schmidt orthogonalization, completeness of
+                                                eigenfunctions, Green’s function – eigenfunction expansion.</li>
+                                            <li>Special functions: Bessel functions of the first kind, orthogonality,
+                                                Neumann functions, Hankel’s functions, Asymptotic expansions, Spherical
+                                                Bessel functions. Legendre functions, generating function, recurrence
+                                                relations, orthogonality, alternate definitions, associated Legendre
+                                                functions, spherical harmonics, Hermite functions, Laguerre functions.
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h4 onclick="toggleContent('optics-spectroscopy')">Advanced Optics and
+                                            Spectroscopy Lab</h4>
+                                        <ul id="optics-spectroscopy" class="toggle-content-details-list">
+                                            <li>Advanced optics experiments involving study of coherence on Michelson
+                                                interferometer and Fabry-Perot atelon.</li>
+                                            <li>Spectroscopic experiments like Zeeman effect, IR spectroscopy and NMR
+                                                spectroscopy, used to study atomic, molecular and nuclear spin
+                                                resonances.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h4 onclick="toggleContent('electronics-instrumentation')">Advanced Electronics
+                                            and Instrumentation Lab</h4>
+                                        <ul id="electronics-instrumentation" class="toggle-content-details-list">
+                                            <li>Micro-controller: Architecture and design. Executing electronic circuits
+                                                using the microcontroller. Logic Gates, Flip Flops, Registers and
+                                                Counters. Basic digital I/O. Digital-to-Analog and Analog-to-Digital
+                                                conversion. Counting and Timing. Timing Diagrams. Motor Control using
+                                                the microcontroller. Servo motors and Stepper Motors.</li>
+                                            <li>FPGA: Introduction to FPGA basic architecture. Programming with Verilog
+                                                and VHDL. Building a function generator using FPGA board. Digital logic
+                                                circuits.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h4 onclick="toggleContent('nuclear')">Nuclear Physics Lab</h4>
+                                        <ul id="nuclear" class="toggle-content-details-list">
+                                            <li>Geiger-Muller (GM) Counter based experiments: To become acquainted with
+                                                the operation and characteristics of the GM counter. To determine the
+                                                best operating voltage and the resolving time of a GM counter. To
+                                                determine the dead time of the GM counter. To investigate the Binomial,
+                                                Poisson and Gaussian probability distributions by counting radiation
+                                                events with a GM counter. To study the statistical fluctuations which
+                                                occur in the disintegration rate of an essentially constant radioactive
+                                                source. To use a GM detector to detect the gamma ray emitted by a
+                                                short-lived excited isotope of Barium.</li>
+                                            <li>Scintillation counter based experiments: To study the scattering of
+                                                high-energy photons by electrons. Detection of scattered photons in a
+                                                scintillation counter. Measuring energies of scattered photons and
+                                                recoil electrons as function of scattering angle. Use a plastic
+                                                scintillator as a target and record relative intensities of scattered
+                                                photons at several scattering angles.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h4 onclick="toggleContent('condensed-matter')">Condensed Matter Physics Lab
+                                        </h4>
+                                        <ul id="condensed-matter" class="toggle-content-details-list">
+                                            <li>Measurements on various materials using standard equipment:
+                                                (1)Hall effect to study carriers in semi-conductors.
+                                                (2)Four-probe method for resistance measurement.
+                                                (3)Magnetic hysteresis loop on various magnetic materials.
+                                                (4)Resistance and Magnetoresistance of some standard materials.
+                                                (5)KCl Fluorescence. Study and color centers.
+                                            </li>
+                                            <li>Advanced and non-standard experiments
+                                                (1)Meissner effect of YBCo
+                                                (2)Design and fabricate a dip-stick to measure resistance versus
+                                                temperature of a superconductor (YBCo) between nitrogen and room
+                                                temperature.
+                                                (3)Study of sand piles.
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+
+                                <h4 class="toggle-title" onclick="toggleContent('physics-electives')">Physics Electives
+                                </h4>
+                                <ul id="physics-electives" class="toggle-content-list">
+
+                                    <li>
+                                        <h4 onclick="toggleContent('intro-lasers')">Introduction to LASERs</h4>
+                                        <ul id="intro-lasers" class="toggle-content-details-list">
+                                            <li>Interaction of Radiation with Matter
+                                                General Introduction, Spontaneous and stimulated emissions, the Einstein
+                                                coefficients</li>
+                                            <li>Line shape function, Line-broadening mechanisms: Homogeneous and
+                                                inhomogeneous broadening, natural-, Doppler- and collision broadening.
+                                            </li>
+                                            <li>Scheme of Light Amplification
+                                                Rates of stimulated emission and absorption, condition for amplification
+                                                by stimulated emission, the meta-stable state and laser action.</li>
+                                            <li>3-level and 4-level pumping schemes. Laser Rate Equations: Two-, three-
+                                                and four-level laser systems, condition for population inversion, gain
+                                                saturation;</li>
+                                            <li>Laser amplifiers, gain and bandwidth; Rare earth doped fiber amplifiers.
+                                            </li>
+                                            <li>Optical Resonators Plane mirror resonator: resonance frequencies, cavity
+                                                loss, cavity lifetime and Q-factor</li>
+                                            <li>Spherical mirror resonators: Ray paths in the resonator, stable and
+                                                unstable resonators,resonator stability condition</li>
+                                            <li>Transverse modes of laser resonators. Hermite-Gauss modes of a spherical
+                                                mirror resonator. Gaussian beams in laser resonators.</li>
+                                            <li>The Laser Laser Oscillations, Optical feedback, threshold condition,
+                                                variation of laser power near threshold, optimum output coupling,</li>
+                                            <li>Characteristics of the laser output, oscillation frequency, Mode
+                                                selection, single-frequency lasers; Methods of pulsing lasers,
+                                                Q-switching and mode-locking.</li>
+                                            <li>Some Laser Systems: Ruby, He-Ne, Nd:YAG, Fiber lasers</li>
+                                            <li>Tunable lasers: The Ti Sapphire laser, Semiconductor lasers; Laser
+                                                safety.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h4 onclick="toggleContent('magnetism-superconductivity')">Concepts in Magnetism
+                                            and Superconductivity</h4>
+                                        <ul id="magnetism-superconductivity" class="toggle-content-details-list">
+                                            <li>The magnetic moment, Bohr magneton, Bohr-van Leeuwen theorem.
+                                                Magnetisation and susceptibility; an isolated atom in a magnetic field,
+                                                dia, para and ferromagnetic susceptibilities. Hund’s rules. Van Vleck
+                                                paramagnetism.</li>
+                                            <li>Magnetization of a collection of independent ions: Curie’s Law.
+                                                Adiabatic demagnetization, Pauli paramagnetism. Ions in a solid: Crystal
+                                                field, Orbital quenching, Jahn-Teller effect.</li>
+                                            <li>Magnetic resonance technique: concepts of NMR, ESR. Magnetic
+                                                interactions, relevant energy scales, dipolar interaction and origin of
+                                                exchange.</li>
+                                            <li>2-electron system, spin Hamiltonian. Direct, super, indirect and
+                                                itinerant exchange. Magnetic impurity, RKKY and the concept of GMR.</li>
+                                            <li>1D Ising model: mean-field and exact solution. Mermin-Wagner theorem. FM
+                                                Heisenberg model, AFM and the concept of frustration.</li>
+                                            <li>Superconductivity: discovery and phenomena. Zero resistance and Meissner
+                                                effect. London equation and two fluid description. Cooper problem.</li>
+                                            <li>BCS theory, energy gap, isotope effect, transition temperature, Specific
+                                                Heat. Type-I, Type-II superconductors, Abrikosov vortices.</li>
+                                            <li>Quantum interference, Josephson effect, superconducting junctions, squid
+                                                and its applications, qubits and quantum chips. Novel superconductors.
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h4 onclick="toggleContent('electro-solids')">Electronic Theory of Solids</h4>
+                                        <ul id="electro-solids" class="toggle-content-details-list">
+                                            <li>Free electron theory of metals, Fermi-Dirac distribution, Free
+                                                electrons, boundary conditions, Density of levels in 1, 2 & 3
+                                                dimensions, Fermi momentum and Fermi energy, Connection between electron
+                                                density and Fermi energy.
+                                                Independent electron systems, degenerate fermi gas: Specific heat,
+                                                semiclassical theory of transport, Drude theory and Hall effect.
+                                                Electronic properties of solids: the two-atom solid, theory of electrons
+                                                in an N-atom solid, linear combination of atomic orbitals – band
+                                                formation</li>
+                                            <li>Periodic potential, Bloch's theorem, tight binding approximation.
+                                                Brillouin zones for square, triangular, cubic lattices and energy bands
+                                                in reduced zone scheme.
+                                                Fermi surface in several cases, instabilities of the Fermi surface.
+                                                Novel electronic structures: graphene and carbon nanotubes. Concept of
+                                                symmetries and their relevance in emergent electronic properties,
+                                                topological insulators.</li>
+                                            <li>Elementary concepts of low dimensional electron gas, quantum dot, 1D and
+                                                2D electron gas introduced. 2D electrons in a magnetic field, integer
+                                                quantum hall effect. Spin filtering and magnetoresistance. Spintronics
+                                                and its applications. Future directions in spin- or valley-tronics.
+                                                Magnetism and its origin, magnetization and susceptibility, dia-, para-
+                                                and ferro-magnetism. Larmour diamagnetism.</li>
+                                            <li>Hund’s rule and paramagnetism, Van Vleck paramagnetism, Curie’s law.
+                                                Thermal properties of magnetic insulators, Pauli paramagnetism.
+                                                Magnetic interactions, two-electron system, spin-spin interactions –
+                                                exchange interaction, direct, super and itinerant exchange.
+                                                Magnetic order, Ising, XY and Heisenberg spin models, mean-field theory,
+                                                ground states and thermodynamics.</li>
+                                            <li>Phenomenology of Superconductors, Superconductivity in metals and
+                                                alloys, New Superconductors, Zero Resistance, Meissner Effect, London
+                                                equation and two- fluid model. Attractive interaction, Cooper problem –
+                                                instability of the Fermi surface, pair formation and binding energy.
+                                                BCS theory, tunneling, SC gap and transition temperature. Sp. heat jump
+                                                at Tc, coherence length and penetration depth: electrodynamics of
+                                                superconductors, Type-I and II SC, vortices.
+                                                Quantum interference, Josephson effect, SC junctions, squid and its
+                                                application. Novel superconductors.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h4 onclick="toggleContent('algo-crypto')">Quantum Algorithms and Cryptography
+                                        </h4>
+                                        <ul id="algo-crypto" class="toggle-content-details-list">
+                                            <li>Basics of Quantum Information
+                                                Entanglement, No Cloning, Quantum Parallelism.</li>
+                                            <li>Quantum Algorithms: Deutsch-Jozsa, Simons, Bernstein-Vazirani,
+                                                Introduction to Cryptography, principles of cryptographic design,
+                                                building cryptography from RSA, Discrete Log</li>
+                                            <li>Key exchange, Symmetric and public key encryption, Random Oracle Model,
+                                                RSA and Elgamal encryption
+                                                Boolean Fourier Analysis, Grover's Algorithm, Quantum Foruier Transform
+                                            </li>
+                                            <li>Shor's Algorithm, Hidden subgroup problem
+                                                Post Quantum Crypto: Introduction to lattices, Useful Lattice Problems.
+                                                Learning with Errors and Short Integer Solution problem. Connection to
+                                                dihedral hidden subgroup problem.</li>
+                                            <li>Public key encryption and fully homomorphic encryption
+                                                Quantum key distribution, Quantum one time pad</li>
+                                            <li>Quantum public key encryption
+                                                Quantum fully homomorphic encryption</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h4 onclick="toggleContent('ultra-science')">Ultrafast Science</h4>
+                                        <ul id="ultra-science" class="toggle-content-details-list">
+                                            <li>Timescales of fundamental processes in nature; Time-resolved techniques
+                                                to
+                                                measure fast kinetics; Laser basics; Principles of Fourier transform;
+                                                Principles of nonlinear
+                                                optics. </li>
+                                            <li>Ultrafast optics: Electric field of an ultrafast pulse; Methods of
+                                                generation and amplification
+                                                of ultrafast pulses: Mode-locking, Chirped-pulsed amplification;
+                                                Measurement of ultrafast
+                                                pulses: Autocorrelation, FROG; Ultrafast nonlinear optics: Optical
+                                                parametric amplification,
+                                                Dispersion and dispersion compensation, Self-phase modulation, Continuum
+                                                generation,
+                                                High-harmonic generation, Generation of attosecond pulses, Frequency
+                                                combs, Generation of
+                                                tera-Hertz pulses. </li>
+                                            <li>Ultrafast spectroscopy: Review of light-matter interaction: Weak-filed
+                                                and strong-filed
+                                                interaction; Time-evolution of population and coherence; Electric-filed
+                                                interaction picture:
+                                                Arrow-diagram and double-sided Feynmann diagram; Third-order
+                                                spectroscopy: Transient
+                                                grating spectroscopy, Pump-probe spectroscopy, Photon-echo spectroscopy,
+                                                Optical Kerr
+                                                spectroscopy. </li>
+                                            <li>Advanced topics: Wave-packet interferometry using phase-locked pulses;
+                                                Multidimensional
+                                                spectroscopy; Fifth-order time-resolved Raman spectroscopy; Quantum
+                                                coherent control:
+                                                Phase-locked pulse sequence, Pulse-shaping, Strong-filed control.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h4 onclick="toggleContent('qpt')">Quantum Phases of Matter and Phase
+                                            Transitions</h4>
+                                        <ul id="qpt" class="toggle-content-details-list">
+                                            <li>Introduction and Motivation: Brief review of key concepts in quantum
+                                                mechanics and statistical mechanics.</li>
+                                            <li>Phase Transitions: Concept of phase and phase diagrams, examples of
+                                                phase transitions, statistical mechanics and phase transitions, Landau
+                                                theory of phase transitions, order parameter, relation to statistical
+                                                mechanics, Superconducting phase transition.</li>
+                                            <li>Theory of superconductors: Electrodynamics of superconductors,
+                                                Ginzburg-Landau theory, BCS theory, Abrikosov’s theory of type II
+                                                superconductors, Anderson’s theory of disordered superconductors,
+                                                Unconventional supercondcutors, heavy Fermions, Order parameter
+                                                symmetry, Josephson effect and SQUID, Superconducting qubits.</li>
+                                            <li>Topological phases of matter and topological phase transitions: Quantum
+                                                Hall effect and the emergence of topological invariants, Topological
+                                                band theory, Model Hamiltonians, Topological properties and protections,
+                                                Characterizing topological materials, Topological states of quantum
+                                                matter, Topological insulators, Topological crystalline insulators,
+                                                Topological superconductors, Weyl and 3D Dirac semimetals, Topological
+                                                phase transitions.</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h4 onclick="toggleContent('foundations-qt')">Foundations of Quantum Mechanics
+                                        </h4>
+                                        <ul id="foundations-qt" class="toggle-content-details-list">
+                                            <li>ntroduction Quantum theory (QT) is empirically a very successful theory;
+                                                there is however an apparent lack of understanding of the theory. This
+                                                is mostly due to the fact that, unlike the space-time structure, the cut
+                                                between the ontology and epistemology in QT is difficult to resolve. The
+                                                two fundamental concepts–the nonlocal correlations (entanglement)
+                                                between space-like separated systems and the indistinguishability
+                                                (non-orthogonality) of quantum states–is widely believed to separate QT
+                                                from classical theories. In this course we take a foundational approach
+                                                to QT from the outside: i.e., since classical theories are completely
+                                                devoid of entanglement, it is compared with various foil theories that
+                                                are also nonlocal and indistinguishable in the sense of QT, such that
+                                                their special nature in the theory can be quantified. The two concepts
+                                                will be explained in this course through the variety of topics it has
+                                                motivated in the field of quantum information and computation, or vice
+                                                versa.</li>
+                                            <li>Mathematical Review: The review of the Hilbert-space formulation of
+                                                quantum mechanics, quantum states, quantum dynamics, and measurements
+                                                qubits, block-sphere representation, Pauli algebra, pure versus mixed
+                                                states, tensor-product, entanglement, purification, VECing an operator,
+                                                quantum operations, LOCC, unitary versus non-unitary dynamics,
+                                                decoherence, positive versus completely positive maps, Kraus
+                                                decomposition</li>
+                                            <li>Correlations: EPR paradox, the realism and no-signaling principle, the
+                                                hidden variable theories, the violation of Bell-type inequalities by
+                                                entangled states (CHSH, Mermin, and Svetlichny inequalities), Nonlocal
+                                                PR box, simulating quantum correlations, shared randomness, entanglement
+                                                and computational complexity</li>
+                                            <li>Indistinguishability: discrimination and estimation of unknown quantum
+                                                states, von Neumann versus POVM measurements, quantum tomography, nature
+                                                of probabilities in QT, contextuality, Gleason's theorem, Kochen-Specker
+                                                theorem, compression of information, Von Neumann entropy, accessible
+                                                information and Holevo's theorem, bit commitment, efficient simulation
+                                                of Hamiltonian dynamics</li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+
+
+
+                                <h4 class="toggle-title" onclick="toggleContent('data-sciences')">Data Science</h4>
+                                <ul id="data-sciences" class="toggle-content-list">
+                                    <li>
+                                        <h4 onclick="toggleContent('data-science')">Intro to Data Science</h4>
+                                        <ul id="data-science" class="toggle-content-details-list">
+                                            <li>Review of Python and relevant packages (numpy, matplotlib, scipy,
+                                                seaborn, pandas, Flask2)
+                                                Introduction to R.
+                                                Review of basic linear algebra: vector spaces, linear transformations,
+                                                diagonalization, computation of eigenvalues, eigenvectors.</li>
+                                            <li>Basic Optimisation: Linear programming, Simplex, Duality, Primal Dual
+                                                Algorithms, Gradient Descent, Newton’s Method, Stochastic Gradient
+                                                Descent, Lagrange Duality</li>
+                                            <li>What does it mean to learn from data? Motivational Case Studies, Data
+                                                Science Process, Key Components of Learning, Population vs. Sample,
+                                                Decision Boundary, Types of data, Typical Issues with Data, Types of
+                                                Learning, Learning as search</li>
+                                            <li>Handling of Big Data, Database management systems, Compression
+                                                techniques, Missing Value imputation, scaling, normalization
+                                                Instance and Hypothesis Space, Introductions to Search Algorithms, Cost
+                                                Functions Version Spaces, Linear Regression, Nearest Neighbours</li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <h4 onclick="toggleContent('machine-learning')">Machine Learning</h4>
+                                        <ul id="machine-learning" class="toggle-content-details-list">
+                                            <li>Bayesian Learning: Random variables, Probability functions, Canonical
+                                                probability distributions, Joint probability distribuion, Bayes rule,
+                                                Independence, Bayesian belief networks, Naive bayes, Markov models,
+                                                Hypothesis testing, Overfitting.</li>
+                                            <li>Diffeent measures in classification/ regression: Precision, recall AUC,
+                                                MAPE.
+                                                Supervised Learning: Decision trees, SVM, Lasso and Ridge regression,
+                                                Ensemble models.</li>
+                                            <li>Unsupervised Learning: EM, K-means, Hierarchical clustering, Birch,
+                                                Spectral clustering.
+                                                Introduction to Neural networks.</li>
+                                            <li>Project: Implement a multi-layered perceptron using numpy-application to
+                                                character recognition, Modelling employee churn.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4 onclick="toggleContent('nonlinear-dynamics')">Non Linear Dynamics, Chaos and
+                                            Complex Theory</h4>
+                                        <ul id="nonlinear-dynamics" class="toggle-content-details-list">
+                                            <li>First-order differential equations and their bifurcations.
+                                                Limit cycles and their bifurcations.
+                                                Phase plane analysis of flows on lines and circles.</li>
+                                            <li>Lorenz equations and introduction to dynamical characteristics of chaos.
+                                                Iterated maps (eg. Logistic map, Tent map).</li>
+                                            <li>Routes to chaos (in particular, period doubling).
+                                                Concepts in renormalization, fractals, multifractals and strange
+                                                attractors.</li>
+                                            <li>Spatiotemporal Chaos in extended nonlinear systems (eg. Coupled Map
+                                                Lattices).
+                                                Illustrations from mechanical vibrations, lasers, biological rhythms,
+                                                superconducting circuits, insect outbreaks, chemical oscillators,
+                                                genetic control systems and chaotic waterwheels.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4 onclick="toggleContent('biocomputing')">Biocomputing</h4>
+                                        <ul id="biocomputing" class="toggle-content-details-list">
+                                            <li>Introduction to Computation: history of computation, need of computation
+                                                in modern biology.
+                                                The types of biological data and databases: sequence, structure,
+                                                expression, interaction, enzyme activity, genomic and population
+                                                data-sets.
+                                                Common data formats used in biology: separator delimited text files and
+                                                their relevance, fasta sequence format, alignment files, tree
+                                                representation, HTML/XML files, bed/gff files etc.</li>
+                                            <li>Working with text editors and spreadsheets.
+                                                Data compression: Huffman encoding, Burrows wheeler transformation, Gif,
+                                                Jpeg, Png, Zip, Tar etc.</li>
+                                            <li>Command-line programming: working with Linux/Cygwin shell, regular
+                                                expressions, installing software in Linux, vi editor, shell scripting,
+                                                working with MS DOS
+                                                Introduction to relational databases: MySQL</li>
+                                            <li>Basic computer programming: elements of programming, PERL or Python.
+                                                Advanced computer programming : writing functions/packages, writing
+                                                images, working with databases through programs, connecting to
+                                                servers/WWW, developing user interfaces with HTML/CGI and Tk</li>
+                                            <li>Statistical computing using R: basic R functions, statistical tests of
+                                                significance, working with advanced packages
+                                                Graphics: working with Gimp, Photoshop, Illustrator and MS powerpoint
+                                                for basic imaging.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                        </div>
+
+                        <div class="column">
+                            <h3 class="toggle-title" onclick="toggleContent('master-projects')">Projects</h3>
+                            <ul id="master-projects" class="toggle-content-list">
+                                <li><strong>Master's Project:</strong> <em>Developing Compact and Robust Laser System
+                                        for Quantum Technological Experiments</em>
+                                    <p>Thesis complete. (Writing under progress)</p>
+                                </li>
+                                <li><strong>Summer Internship:</strong> <em>Setting up Data acquisition system for cold
+                                        atom experiments</em>
+                                    <p>In this summer internship, I worked for the project <a href="https://www.qoqi.physik.uni-mainz.de/research-projects/quantus/beccal/" target="_blank">BECCAL</a>. I worked on setting up data acquisition system with National Instruments Devices using Python, for Cold Atom Experiments.</p>
+                                </li>
+                                <li><strong>Summer Internship:</strong> <em>Monte Carlo Methods for an Ising model of
+                                        ferromagnets and antiferromagnets</em>
+                                    <p>In this project, I simulated 2D Ising Models for ferromagnets and antiferromagnets, used Metropolis Algorithm in calculating various observables, and simulated different types of Hamiltonians and interactions among spins and its consequences on the overall observable value of that model.
+                                        Some codes related to this project can be found <a href="https://github.com/shivam-kr-sharma/2D_Ising_Model_Simulation" target="_blank">here</a>.</p>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p> For more information on my projects you can have a look at my CV below or for coding projects you can look at my <a href="https://github.com/shivam-kr-sharma">github</a> profile</p>
+                </div>
+                
+            </div>
+            <div class="education-item">
+                <h2>Secondary High School(12th Standard / Intermediate)</h2>
+                <p><strong>Anugraha Narayan Singh College</strong> - Barh, Patna, India</p>
+                <p><strong>Timeline:</strong> 2017 - 2019</p>
+                <p><strong>Board of Certificate</strong> Bihar School Examination Board (BSEB)</p>
+                <p>I studied in this beautiful college for two years.</p>
+
+                <div class="toggle-content">
+                    <div class="row">
+                        <div class="column">
+                            <h3 class="toggle-title" onclick="toggleContent('secondary-high-school')">Relevant Subjects
+                            </h3>
+                            <ul id="secondary-high-school" class="toggle-content-list">
+                                <li>Mathematics</li>
+                                <li>Physics</li>
+                                <li>Chemistry</li>
+                                <li>Hindi</li>
+                                <li>English</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="education-item">
+                <h2>High School (10th standard)</h2>
+                <p><strong>Adarsh Gyanodaya Vidyalaya</strong> - Barh, Patna, India</p>
+                <p><strong>Timeline:</strong> 2007 - 2017</p>
+                <p><strong>Board of Certificate</strong> Central Board of Secondary Education (CBSE)</p>
+                <p>I studied in this school up to High School.</p>
+
+                <div class="toggle-content">
+                    <div class="row">
+                        <div class="column">
+                            <h3 class="toggle-title" onclick="toggleContent('highschool-subjects')">Relevant Subjects
+                            </h3>
+                            <ul id="highschool-subjects" class="toggle-content-list">
+                                <li>Mathematics</li>
+                                <li>Science</li>
+                                <li>Social Science</li>
+                                <li>Hindi</li>
+                                <li>English</li>
+                                <li>Moral Science</li>
+                                <li>General Knowledge</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="education-item">
+                <h2> My Curriculum Vitae</h2>
+                <p>For more information about the projects and research interests, you can have a look at my CV.</p>
+                <embed src="curriculum vitae.pdf" width="100%" height="800px" type="application/pdf">
+            </div>
+        </section>
+        
+    </main>
+    
+
+    <footer>
+        <p>© 2025 Shivam Kumar. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+
+</html>
